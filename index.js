@@ -8,23 +8,23 @@ module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, 
 
 
 //FUNCTION 1
- function calculateTax(amount){
+function calculateTax(amount) {
     return amount * 0.10
 
- }
+}
 
- //FUNCTION 2
- function convertToUpperCase(text){
-    let result=""
+//FUNCTION 2
+function convertToUpperCase(text) {
+    let result = ""
     let smallAlphabet = "abcdefghijklmnopqrstuvwxyz"
-    let upperAlphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      
-    for( let i = 0;i < text.lengthh; i++) {
+    let upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    for (let i = 0; i < text.lengthh; i++) {
         let currentLetter = text[i]
         let found = false;
 
         for (let j = 0; j < lowerAlphabet.length; j++) {
-            if (currentLetter === lowerAlphabet [j]) {
+            if (currentLetter === lowerAlphabet[j]) {
 
                 result += upperAlphabet[j];
                 found = true;
@@ -32,16 +32,28 @@ module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, 
         }
 
     }
- }
- //FUNCTION 3
- function findMaximum(num1,num2){
+}
+//FUNCTION 3
+function findMaximum(num1, num2) {
     if (num1 > num2) {
         return num1
     }
-    else{
+    else {
         return num2
     }
- }
+}
 
 
- 
+//FUNCTION 4
+function isPalindrom(word) {
+
+    for (let i = word.length - 1; i >= 0; i--) {
+        reverseWord += word[i];
+    }
+    if (word === reverseWord) {
+        return true
+    }
+    else {
+        return false
+    }
+}
