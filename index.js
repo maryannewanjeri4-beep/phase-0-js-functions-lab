@@ -33,3 +33,15 @@ module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, 
 
     }
  }
+ //FUNCTION 3
+ function findMaximum(num1,num2){
+    if (num1 > num2) {
+        return num1
+    }
+    else{
+        return num2
+    }
+ }
+
+
+ 
